@@ -1,0 +1,16 @@
+domain: buleye.com
+layout:
+- go.kubebuilder.io/v3
+projectName: redis-operator
+repo: github.com/ybooks240/redisSentinel
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: buleye.com
+  group: redis
+  kind: RedisSentinel
+  path: github.com/ybooks240/redisSentinel/api/v1
+  version: v1
+version: "3"

@@ -1,0 +1,15 @@
+apiVersion: redis.buleye.com/v1
+kind: RedisSentinel
+metadata:
+  name: demo
+  namespace: demo
+spec:
+  redis:
+    replicas: 3
+    image: redis
+    port: 6379
+    passwd: 123.com
+  sentinel:
+    replicas: 3
+    image: redis
+    port: 26379
